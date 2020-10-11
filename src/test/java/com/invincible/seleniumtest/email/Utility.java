@@ -43,16 +43,13 @@ public class Utility {
 
 	public boolean checkTextInSubject(String text, Message[] msgs) {
 		boolean check= false;
-		int i=0;
 		if(msgs!=null) {
 			for (Message msg: msgs) {
 				try {
 					if(msg.getSubject()!=null&&msg.getSubject().contains(text)) {
 						check=true;
-						System.out.println("mail no: "+i+"/n subject: "+msg.getSubject()+"/n body: "+msg.getContent().toString());
+						System.out.println("mail subject: "+msg.getSubject()+"/n body: "+msg.getContent().toString());
 						break;
-					}else {
-						i++;
 					}
 				} catch (MessagingException |IOException e) {
 					e.printStackTrace();
@@ -66,8 +63,9 @@ public class Utility {
 		if(msgs!=null) {
 			for (Message msg: msgs) {
 				try {
-					if(msg.getContent().toString().contains(text)) {
+					if(msg.getContent().toString()!=null&&msg.getContent().toString().contains(text)) {
 						check=true;
+						System.out.println("mail subject: "+msg.getSubject()+"/n body: "+msg.getContent().toString());
 						break;
 					}				
 				} catch (MessagingException |IOException e) {
