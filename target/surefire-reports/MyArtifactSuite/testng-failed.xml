@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="methods" name="Failed suite [MyArtifactSuite]" verbose="0">
+  <test parallel="methods" name="AllSuites(failed)">
+    <classes>
+      <class name="com.invincible.seleniumtest.suites.EmailTest">
+        <methods>
+          <include name="testClose"/>
+          <include name="testTextContained"/>
+          <include name="connectToEmail"/>
+        </methods>
+      </class> <!-- com.invincible.seleniumtest.suites.EmailTest -->
+    </classes>
+  </test> <!-- AllSuites(failed) -->
+</suite> <!-- Failed suite [MyArtifactSuite] -->

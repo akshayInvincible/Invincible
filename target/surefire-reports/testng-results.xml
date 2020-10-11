@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-10-11T16:56:27Z" name="MyArtifactSuite" finished-at="2020-10-11T16:56:27Z" duration-ms="62">
+    <groups>
+    </groups>
+    <test started-at="2020-10-11T16:56:27Z" name="AllSuites" finished-at="2020-10-11T16:56:27Z" duration-ms="62">
+      <class name="com.invincible.seleniumtest.suites.EmailTest">
+        <test-method signature="connectToEmail()[pri:0, instance:com.invincible.seleniumtest.suites.EmailTest@4524411f]" started-at="2020-10-11T22:26:27Z" name="connectToEmail" data-provider="Authenticator" finished-at="2020-10-11T22:26:27Z" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:150)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:431)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1335)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1051)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1140)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- connectToEmail -->
+        <test-method signature="testTextContained()[pri:0, instance:com.invincible.seleniumtest.suites.EmailTest@4524411f]" started-at="2020-10-11T22:26:27Z" name="testTextContained" finished-at="2020-10-11T22:26:27Z" depends-on-methods="com.invincible.seleniumtest.suites.EmailTest.connectToEmail" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method EmailTest.testTextContained()[pri:0, instance:com.invincible.seleniumtest.suites.EmailTest@4524411f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method EmailTest.testTextContained()[pri:0, instance:com.invincible.seleniumtest.suites.EmailTest@4524411f] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1099)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTextContained -->
+        <test-method is-config="true" signature="testClose()[pri:0, instance:com.invincible.seleniumtest.suites.EmailTest@4524411f]" started-at="2020-10-11T22:26:27Z" name="testClose" finished-at="2020-10-11T22:26:27Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testClose -->
+      </class> <!-- com.invincible.seleniumtest.suites.EmailTest -->
+    </test> <!-- AllSuites -->
+  </suite> <!-- MyArtifactSuite -->
+</testng-results>
